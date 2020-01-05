@@ -1,0 +1,128 @@
+.blog-page-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+  background: url('/images/blogbg.jpg') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+  }
+
+  .line-mob {
+    width: 70px;
+    height: 0.75px;
+    background: rgb(229, 229, 229);
+    position: absolute;
+  }
+
+  .blog-title-wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.blog-wrap {
+  .blog-item {
+    position: relative;
+    cursor: pointer;
+    height: 396px;
+    max-width: 370px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    background-size: cover !important;
+    margin: 25px auto;
+
+    .blog-item-title {
+      font-family: "Montserrat-Bold", sans-serif;
+      color: $txt-color;
+      margin-bottom: 30px;
+    }
+
+    .blog-item-descr {
+      color: $txt-color;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    .arrow-blog {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .background-blog-full {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 20px;
+    }
+  }
+
+  .load-more-posts {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 273px;
+  }
+
+  @media (max-width: 767px) {
+    //margin-top: -13%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: -19%;
+  }
+
+  @media (max-width: 1199px) {
+    margin-top: 0 !important;
+  }
+    @media (min-width: 1200px) {
+        margin-top: -13%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+  .blog-page-section {
+    h2 {
+      padding-left: 104px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-page-section {
+    padding-top: 190px;
+    height: 550px;
+    background-size: cover;
+    .right-side-txt-block {
+      display: none;
+    }
+    p {
+      margin-top: 23px;
+    }
+
+    .line-mob {
+      display: none;
+    }
+
+  }
+}
+
+.blog-wrap {
+  .blog-item-wrap {
+    &:nth-child(2), &:nth-child(5) {
+      .background-blog-full {
+        display: none;
+      }
+    }
+  }
+}
+

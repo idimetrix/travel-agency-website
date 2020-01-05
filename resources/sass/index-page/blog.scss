@@ -1,0 +1,125 @@
+.blog-section {
+  margin-top: 94px;
+
+  h1 {
+    color: $txt-color-dark;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    color: $txt-color-dark-gray;
+    font-family: "Montserrat-Bold", sans-serif;
+  }
+
+  .for-line {
+    height: 1px;
+    background: rgba(73, 73, 73, 0.5);
+    width: 80%;
+    margin-top: 105px;
+  }
+
+  .blog-items-wrap {
+    margin-top: 94px;
+    display: flex;
+
+    .blog-item {
+      position: relative;
+      cursor: pointer;
+      height: 396px;
+      width: 370px;
+      object-fit: cover;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 15px 20px;
+      background-size: cover !important;
+
+      .blog-item-title {
+        font-family: "Montserrat-Bold", sans-serif;
+        color: $txt-color;
+        margin-bottom: 30px;
+      }
+
+      .blog-item-descr {
+        color: $txt-color;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+
+      .arrow-blog {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      .background-blog-full {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border-radius: 20px;
+      }
+
+      @media (min-width: 1200px) {
+        &:nth-child(2n) {
+          margin: 0 30px;
+        }
+      }
+
+      @media (max-width: 767px) {
+      margin: 15px;
+      }
+
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .blog-nav-items {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    h1, h4 {
+     text-align: center;
+    }
+
+    .for-line {
+      display: none;
+    }
+
+    .blog-items-wrap {
+      margin-top: 50px;
+    }
+
+    .blog-link-wrap {
+      margin-top: 20px !important;
+    }
+  }
+
+  .blog-nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    .l-arrow-blog {
+      margin-left: 0;
+    }
+
+    .r-arrow-blog {
+      margin-right: 14px;
+    }
+
+  }
+
+  .blog-link-wrap {
+    width: 255px;
+    margin: 30px auto 0 !important;
+
+  }
+
+}

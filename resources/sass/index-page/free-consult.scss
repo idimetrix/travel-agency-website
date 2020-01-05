@@ -1,0 +1,270 @@
+.top-free-consult-section {
+  height: 300px;
+  background: url('/images/top-free-consult-back.png') no-repeat;
+  margin-top: 100px;
+  background-position: bottom right;
+  background-size: cover;
+}
+
+.free-consult-section {
+  margin-top: -50px;
+  background: url('/images/free-consult-back.jpg') no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 263px;
+    background-size: cover;
+
+  h1 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+    margin: 46px 0 30px;
+  }
+
+  h4 {
+    font-family: "Montserrat-Bold", sans-serif;
+    color: $txt-color-gray;
+  }
+
+  .sub-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .for-line {
+      width: 219px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      margin-right: 30px;
+    }
+  }
+
+  .contact-info-block {
+    margin-top: 87px;
+    .sub-contact-info-block-wrap {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 30px;
+      a, span {
+        font-family: "Montserrat-Bold", sans-serif;
+        color: $txt-color-gray;
+        text-decoration: none;
+        margin-left: 30px;
+      }
+
+      .img-wrap {
+        img {
+          //min-width:14px;
+        }
+      }
+    }
+
+    a, span {
+      font-size: 18px;
+    }
+
+  }
+
+  .address-block {
+    margin-top: 60px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 560px;
+    min-height: 657px;
+    border-radius: 20px;
+    background: #fff;
+    .title-form-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        font-family: "Montserrat-Bold", sans-serif;
+        text-align: center;
+        color: $txt-color-dark;
+      }
+
+      .line {
+        width: 150px;
+        background: #494949;
+        height: 1px;
+        opacity: 0.2;
+        margin-top: 40px;
+      }
+
+        .error {
+            border: 1px solid red;
+        }
+    }
+  }
+
+  .fields-block {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    .name-input-field, .number-input-field {
+      border-radius: 10px;
+      height: 55px;
+      background: rgba(245, 245, 245, 0.8);
+      width: 364px;
+      margin-bottom: 30px;
+      border: none;
+      font-size: 16px;
+      padding-left: 20px;
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    .check-box-wrap {
+      display: flex;
+      align-items: center;
+      //justify-content: center;
+    }
+
+    textarea {
+      border-radius: 10px;
+      min-height: 98px;
+      background: rgba(245, 245, 245, 0.8);
+      width: 364px;
+      margin-bottom: 30px;
+      border: none;
+      font-size: 16px;
+      padding: 19px 20px;
+
+      &:focus {
+        outline: none !important;
+      }
+    }
+
+    .custom-check {
+      -webkit-appearance: none;
+      border-radius: 2px;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      background: rgba(245, 245, 245, 0.8);
+      display: flex;
+        justify-content: center;
+        align-items: center;
+
+      &:focus {
+        outline: none !important;
+      }
+
+    }
+
+    .custom-check:checked:after {
+      content: "";
+      display: flex;
+      width: 5px;
+      height: 5px;
+      background-color: #fff;
+      background: $btn-color-blue;
+      border-radius: 50%;
+    }
+
+    .check-label {
+      margin-left: 22px;
+      font-size: 14px;
+      color: #696969;
+    }
+  }
+
+  .btn-blue {
+    width: 255px;
+    margin: 30px auto 0;
+  }
+}
+
+.mob-info-block {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .deskt-info-block {
+    display: none;
+  }
+
+  .mob-info-block {
+    display: block;
+
+  .line-mob {
+      display: none;
+  }
+      .address-block {
+          margin-top: 30px;
+      }
+  }
+
+  .top-free-consult-section {
+    height: 300px;
+    //background: url('/images/top-free-consult-back-mob.jpg') no-repeat;
+    margin-top: -50px;
+    background-position: bottom right;
+    background-size: cover;
+  }
+
+  .free-consult-section {
+    background: url(/images/free-consult-back-mob.webp) no-repeat;
+    background-size: cover;
+    h1, h4 {
+      text-align: center;
+      width: 100%;
+    }
+
+    .for-line {
+      display: none;
+    }
+
+    .line {
+      margin-top: 30px !important;
+    }
+
+    form {
+      width: 100%;
+      padding: 50px 23px;
+      margin-top: 100px;
+
+      .fields-block {
+        margin-top: 30px;
+        width: 100%;
+        .name-input-field, .number-input-field {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        textarea {
+          width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .free-consult-section {
+    form {
+      width: 100%;
+    }
+  }
+
+  .top-free-consult-section {
+   margin-top: 0;
+  }
+
+
+}

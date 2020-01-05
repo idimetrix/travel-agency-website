@@ -1,0 +1,242 @@
+.top-title-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+
+  background: url('/images/indexheadbg.jpg') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    display: flex;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: #F5F5F5;
+    align-items: center;
+
+    .line {
+      background: rgb(229,229,229);
+      width: 70px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      left: 15px;
+
+      @media (max-width: 767px) {
+      display: none;
+      }
+
+    }
+
+  }
+
+  h3 {
+    color: #E5E5E5;
+    font-family: "Montserrat-Bold", sans-serif;
+    margin-top: 47px;
+  }
+
+  p {
+    color: #E5E5E5;
+    line-height: normal;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    font-family: "Montserrat-Medium", sans-serif;
+    margin: 47px 0 40px 0;
+  }
+
+    @-webkit-keyframes slideme {
+        0% {
+            left: -30px;
+            margin-left: 0px;
+        }
+
+        30% {
+            left: 110%;
+            margin-left: 80px;
+        }
+
+        100% {
+            left: 110%;
+            margin-left: 80px;
+        }
+    }
+
+    @keyframes slideme {
+        0% {
+            left: -30px;
+            margin-left: 0px;
+        }
+
+        30% {
+            left: 110%;
+            margin-left: 80px;
+        }
+
+        100% {
+            left: 110%;
+            margin-left: 80px;
+        }
+    }
+
+  .marq-btn {
+      width: 550px;
+      height: 100px;
+      position: relative;
+      overflow: hidden;
+    padding: 0 15px;
+    background-color: #ffd600;
+    color:#000;
+    font-size: 18px;
+    border-color: transparent;
+    border-style: solid;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+      flex-direction: column;
+      border-bottom: 3px solid #ffae00;
+
+    &:hover {
+        background: #FFBA00;
+      color: #000000;
+    }
+
+    &:focus {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+      &:after {
+          content: "";
+          margin-left: 60px;
+          width: 30px;
+          height: 300px;
+          background: #fff;
+          animation-delay: 0.05s;
+          position: absolute;
+          left: -40px;
+          top: -150px;
+          animation-timing-function: ease-in-out;
+          transition: all 0.1s;
+          animation-name: slideme;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+          transform: rotate(45deg);
+      }
+
+      .sub-btn-txt {
+          font-size: 12px;
+          display: block;
+          margin-top: 5px;
+      }
+
+      @media (max-width: 1200px) {
+       width:100%;
+      }
+
+      @media (max-width: 374px) {
+       height: 85px;
+      }
+
+  }
+
+  .right-side-txt-block {
+    top: -5px;
+    align-items: center;
+    width: 69px;
+    font-family: "Montserrat-Bold", sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 24px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E5E5E5;
+    opacity: 0.5;
+    position: absolute;
+    height: 389px;
+    display: flex;
+    justify-content: space-around;
+    right: 0;
+
+    .for-m-t {
+      margin-top: 20px;
+    }
+
+    .for-m-b {
+      margin-bottom: 20px;
+    }
+
+    .left-line {
+      background: rgba(229, 229, 229, 0.2);
+      width: 1px;
+      height: 228px;
+      position: absolute;
+      left: 0;
+      margin-top: -15px;
+    }
+
+    .right-line {
+      background: rgba(229, 229, 229, 0.2);
+      width: 1px;
+      height: 228px;
+      position: absolute;
+      right: 0;
+      margin-top: -15px;
+    }
+  }
+
+
+}
+
+.tour-test {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px 48px 40px 48px;
+    margin-top: -150px;
+    margin-bottom: 100px;
+
+    h1{
+        font-size: 25px;
+        font-family: Montserrat-Bold;
+        color: #007bff;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 960px) {
+  .tour-test {
+    margin-bottom: 25px;
+    margin-top: -145px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tour-test {
+    padding: 10px 15px 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-title-section {
+  h2,h3 , p {
+    padding-left: 104px;
+  }
+    .btn-blue {
+    margin-left: 104px;
+  }
+}
+}
+
+@media (max-width: 1200px) {
+  .top-title-section {
+    padding-top: 190px;
+    background: url(/images/indexheadbgmob.webp) no-repeat;
+    height: 750px;
+    background-size: cover;
+    .right-side-txt-block {
+      display: none;
+    }
+    p {
+      margin-top: 23px;
+    }
+  }
+}
+

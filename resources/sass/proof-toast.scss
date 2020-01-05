@@ -1,0 +1,61 @@
+.toast{
+  height: 80px;
+  width: 300px;
+  position: fixed;
+  bottom: -100px;
+  left: 10px;
+  background-color: white;
+  z-index: 39;
+  border-radius: 40px;
+  opacity: 1;
+  transition: all .55s cubic-bezier(0.55, 0.09, 0.68, 0.53);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 0px #1e1e1e63;
+  &.active{
+    bottom: 10px;
+    opacity: 1;
+  }
+  .toast-img{
+    height: 50px;
+    width: 50px;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .toast-text{
+    color: black;
+    width: 65%;
+    font-family: 'Montserrat-Medium';
+    h5{
+      font-size: 15px;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 90%;
+      font-family: Montserrat-Bold;
+        letter-spacing: 0;
+    }
+    p{
+      margin: 3px;
+      font-size: 12px;
+      line-height: 1.2;
+        letter-spacing: 0;
+    }
+    .time {
+      color: #1E1E1E;
+      font-size: 10px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .toast{
+    display: none;
+    visibility: hidden;
+  }
+}

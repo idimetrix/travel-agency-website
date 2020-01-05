@@ -1,0 +1,162 @@
+.countries-page-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+
+
+  //background: linear-gradient(0deg, rgba(38, 40, 50, 0.5), rgba(38, 40, 50, 0.5)), url('/images/countriesbg.png') no-repeat;
+  background: url('/images/countriesbg.jpg') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+  }
+
+  .line-mob {
+    width: 70px;
+    height: 0.75px;
+    background: rgb(229, 229, 229);
+    position: absolute;
+  }
+
+  .countries-title-wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-side-txt-block {
+    top: -5px;
+    align-items: center;
+    width: 69px;
+    font-family: "Montserrat-Bold", sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    line-height: 15px;
+    font-size: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $txt-color-gray;
+    opacity: 0.5;
+    position: absolute;
+    height: 231px;
+    display: flex;
+    justify-content: space-around;
+    right: 0;
+
+    .for-m-t {
+      margin-top: 20px;
+    }
+
+    .for-m-b {
+      margin-bottom: 20px;
+    }
+
+    .left-line {
+      background: rgba(229, 229, 229, 0.2);
+      width: 1px;
+      height: 118px;
+      position: absolute;
+      left: 0;
+      margin-top: -15px;
+    }
+
+    .right-line {
+      background: rgba(229, 229, 229, 0.2);
+      width: 1px;
+      height: 118px;
+      position: absolute;
+      right: 0;
+      margin-top: -15px;
+    }
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .countries-page-section {
+    h2{
+      padding-left: 104px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .countries-page-section {
+    padding-top: 190px;
+    height: 550px;
+    background-size: cover;
+    .right-side-txt-block {
+      display: none;
+    }
+    p {
+      margin-top: 23px;
+    }
+
+    .line-mob {
+      display: none;
+    }
+
+  }
+}
+
+.countries-page-slider-wrap {
+  .popular-ways-section {
+    margin-top: -300px;
+    .pop-ways-nav {
+      margin-bottom: 0;
+    }
+  }
+    #customNav{
+        .owl-prev, .owl-next{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+    .owl-carousel {
+        margin-top: 0 !important;
+        .owl-stage-outer{
+            overflow: inherit !important;
+        }
+
+        .owl-stage {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            height: 500px;
+        }
+        .owl-item {
+            //width: 264px !important;
+            //margin: 0  15px;
+
+            &.center {
+                .popular-ways-item {
+                    height: 396px !important;
+                    width: 300px !important;
+                    .btn-blue {
+                        display: flex !important;
+                        min-width: 100%;
+                    }
+
+                    .item-title {
+                        font-size: 18px !important;
+                    }
+                    .sub-title-block {
+                        max-height: 100%;
+                    }
+
+                    //.item-descr {
+                    //    display: block !important;
+                    //}
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,413 @@
+.tour-page-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+  //background: url('/images/tourpagebg.png') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  h3 {
+    color: $txt-color-dark-gray;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+  }
+
+  .line-mob {
+    width: 70px;
+    height: 1px;
+    background: rgb(229, 229, 229);
+  }
+
+  .blog-title-wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      padding-top: 0;
+    }
+  }
+
+}
+
+.single-tour-wrap {
+
+  .tour-name {
+    font-family: "Montserrat-Bold", sans-serif;
+    color: $txt-color-dark-gray;
+    margin-bottom: 50px;
+  }
+
+  .about-country-wrap {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    .country-name {
+      font-family: "Montserrat-Bold", sans-serif;
+      color: $txt-color-dark-gray;
+      margin: -35px 0 50px;
+      @media (max-width: 767px) {
+        margin-top: 25px;
+      }
+    }
+
+    .about-tour-info {
+      margin-bottom: 60px;
+
+      .tour-info-key {
+        color: $txt-color-dark-gray;
+        margin-bottom: 0;
+        padding: 34px 0 30px;
+        border-bottom: 1px solid rgba(73, 73, 73, 0.1);
+      }
+
+      .tour-info-value {
+        font-family: "Montserrat-Bold", sans-serif;
+        color: $btn-color-blue;
+        margin-bottom: 0;
+        padding: 30px 0;
+      }
+
+      .notice-txt {
+        color: $txt-color-dark-gray;
+        margin-bottom: 0;
+        padding-top: 30px;
+      }
+
+      .notice-txt.blue-txt {
+        margin-bottom: 0;
+        padding-top: 34px;
+        color: $btn-color-blue;
+        line-height: normal;
+        letter-spacing: 0.05em;
+      }
+
+      .vert-line {
+        background: rgba(73, 73, 73, 0.1);
+        width: 1px;
+        height: 100px;
+        position: absolute;
+        right: 30px;
+        top: -6px;
+
+        @media (max-width: 992px) {
+         display: none;
+        }
+
+      }
+
+    }
+
+    .text-wrap {
+      p {
+        font-size: 18px;
+        color: $txt-color-dark-gray;
+        margin-bottom: 0;
+      }
+    }
+
+    .for-slider-wrap {
+      margin-right: -70px;
+
+      .slick-slide {
+        margin: 0 10px;
+      }
+      .slick-list {
+        margin: 0 -10px;
+      }
+
+      .slider-item {
+        position: relative;
+        height: 170px;
+        border-radius: 20px;
+
+        .slider-item-photo {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+        a {
+          display: flex;
+          position: relative;
+          z-index: 2;
+          outline: none !important;
+          border-radius: 20px;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          .loupe-icon {
+            position: absolute;
+            display: none;
+            z-index: 3;
+          }
+        }
+
+        &:hover {
+          a {
+            .loupe-icon {
+              display: flex;
+            }
+
+            &:after {
+              content: " ";
+              position: absolute;
+              background: red;
+              width: 100%;
+              height: 100%;
+              background: linear-gradient(0deg, rgba(38, 40, 50, 0.8), rgba(38, 40, 50, 0.8));
+              border-radius: 20px;
+            }
+
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+        margin-right: 0;
+      }
+
+    }
+
+    .country-example-nav {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      .r-arrow-country {
+        margin-right: 14px;
+        cursor: pointer;
+      }
+
+      .l-arrow-country {
+        margin-left: 14px;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-top: -55%;
+      padding: 25px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: -25%;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: -13%;
+    }
+
+  }
+
+  .single-country-nav {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #C4C4C4;
+      font-size: 18px;
+      font-family: "Montserrat-Bold", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: "Montserrat-Bold", sans-serif;
+      color: $txt-color-dark-gray;
+    }
+
+    .front-line {
+      margin: 0 50px;
+      width: 1px;
+      height: 30px;
+      background: rgba(73, 73, 73, 0.5);
+
+      @media (max-width: 767px) {
+        margin: 0 10px;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+      justify-content: space-around;
+    }
+
+  }
+
+  .for-search-module {
+      background: #fff;
+      margin-top: 100px;
+      padding: 10px 48px 30px 48px;
+      border-radius: 20px;
+  }
+
+  .form-sub {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 20px;
+    form {
+      padding: 50px;
+
+      .line {
+       width:150px;
+        height: 1px;
+        background: rgba(73, 73, 73, 0.2);
+        margin-top: 40px;
+      }
+
+      h3 {
+        font-family: "Montserrat-Bold", sans-serif;
+        color: $txt-color-dark;
+      }
+
+      .fields {
+        display: flex;
+        margin-top: 40px;
+
+
+        .name-input-field, .number-input-field {
+          border-radius: 10px;
+          height: 55px;
+          background: rgba(245, 245, 245, 0.8);
+          width: 364px;
+          margin-bottom: 20px;
+          border: none;
+          font-size: 16px;
+          padding-left: 20px;
+
+          &:focus {
+            outline: none;
+          }
+
+          @media (max-width: 992px) {
+            width: 100%;
+          }
+
+        }
+
+        .name-input-field {
+        margin-right: 20px;
+        }
+
+        @media (max-width: 767px) {
+         flex-direction: column;
+        }
+
+      }
+
+      textarea {
+        border-radius: 10px;
+        min-height: 98px;
+        background: rgba(245, 245, 245, 0.8);
+        width: 748px;
+        border: none;
+        font-size: 16px;
+        padding: 19px 20px;
+        margin-bottom: 20px;
+
+
+        &:focus {
+          outline: none;
+        }
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+
+      }
+
+      .btns-wrap {
+        display: flex;
+
+
+        .check-box-wrap {
+          display: flex;
+          align-items: center;
+          margin-left: 50px;
+
+          @media (max-width: 767px) {
+            margin: 0 0 15px;
+          }
+
+        }
+
+        .custom-check {
+          -webkit-appearance: none;
+          border-radius: 2px;
+          width: 20px;
+          height: 20px;
+          position: relative;
+          flex-shrink: 0;
+          background: rgba(245, 245, 245, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+          &:checked:after {
+              content: "";
+              display: flex;
+              width: 5px;
+              height: 5px;
+              background-color: #fff;
+              background: $btn-color-blue;
+              border-radius: 50%;
+          }
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .check-label {
+          margin-left: 22px;
+          font-size: 14px;
+          color: #696969;
+        }
+
+        @media (max-width: 767px) {
+          flex-wrap: wrap-reverse;
+        }
+
+        .btn-blue {
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+      }
+
+      @media (max-width: 767px) {
+       padding: 25px;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .tour-page-section {
+    padding-top: 190px;
+    height: 550px;
+    background-size: cover;
+    .right-side-txt-block {
+      display: none;
+    }
+    p {
+      margin-top: 23px;
+    }
+
+    .line-mob {
+      display: none;
+    }
+  }
+}
+
+

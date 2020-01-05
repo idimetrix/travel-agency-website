@@ -1,0 +1,230 @@
+
+.top-wave-back {
+    background: url('/images/topwave.png') no-repeat;
+    height: 301px;
+    background-position: bottom right;
+    background-size: cover;
+    margin-bottom: -1px;
+}
+
+.insta-section {
+
+    .insta-title-wrap {
+        height: 106px;
+        background: url('/images/mediumwave.png') no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+
+        .right-side-block {
+            position: relative;
+            .for-line {
+                position: absolute;
+                width: 50px;
+                height: 1px;
+                background: rgba(229, 229, 229, 0.5);
+                top: 35px;
+                left: 100px;
+            }
+            p {
+                font-size: 12px;
+                color: $txt-color-gray;
+                position: absolute;
+                right: 0;
+                top: 20px;
+            }
+        }
+    }
+
+    .mid-wave-back {
+        height: 440px;
+        //height: 333px;
+        background: url('/images/bottomwave.png') no-repeat;
+        background-size: cover;
+    }
+
+    .insta-photos-block, .insta-photos-block-2 {
+        .inst-img-wrap {
+            height: 429px;
+            border-radius: 20px;
+            background: $txt-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+
+            .hover-inst-block {
+                z-index: 1;
+                position: absolute;
+                bottom: 0;
+                padding: 15px;
+                width: 100%;
+                background: white;
+                transition: all .9s ease-in-out;
+
+                p {
+                    margin: 0;
+                    color: black;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        .insta-nav-items {
+            display: none;
+        }
+
+        .insta-photos-block, .insta-photos-block-2 {
+            height: 683px;
+            position: relative;
+            margin-top: -154px;
+
+            .inst-img-wrap {
+                position: absolute;
+                width: 270px;
+                box-shadow: 0px 0px 40px rgba(26, 29, 41, 0.05);
+                outline: none !important;
+            }
+
+            .inst-img-wrap.one {
+                height: 463px;
+            }
+
+            .inst-img-wrap.two {
+                height: 683px;
+                left: 300px;
+            }
+
+            .inst-img-wrap.three {
+                height: 337px;
+                left: 600px;
+            }
+
+            .inst-img-wrap.four {
+                height: 683px;
+                left: 900px;
+            }
+
+            .inst-img-wrap.five {
+                height: 190px;
+                bottom: 0;
+            }
+
+            .inst-img-wrap.six {
+                height: 316px;
+                left: 600px;
+                bottom: 0;
+            }
+
+            &:before {
+                content: ' ';
+                height: 299px;
+                background: linear-gradient(180deg, rgba(245, 245, 245, 0.5) 0%, #F5F5F5 100%);
+                background: rgba(245, 245, 245, 0.5);
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+    .insta-nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+        .l-arrow-insta {
+            margin-left: 0px;
+        }
+
+        .r-arrow-insta {
+            margin-right: 14px;
+        }
+
+    }
+
+    h1 {
+        font-family: "Montserrat-ExtraBold", sans-serif;
+        color: $txt-color;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        color: $txt-color-gray;
+        font-family: "Montserrat-Bold", sans-serif;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .top-wave-back {
+        background: url('/images/mobiletopwave.png') no-repeat;
+        height: 220px;
+        background-position: bottom right;
+        background-size: cover;
+    }
+
+    .insta-section {
+
+        h1, h4 {
+            text-align: center;
+        }
+
+        .insta-title-wrap {
+            height: auto;
+            margin-top: -50px;
+        }
+
+        .right-side-block {
+            display: none;
+        }
+
+        .insta-photos-block {
+            margin-top: -200px;
+        }
+
+        .mid-wave-back {
+            height: 350px;
+        }
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    .insta-title-wrap, .mid-wave-back {
+        margin-top: -1px;
+    }
+    .for-line {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1199px) {
+    .insta-photos-block-2 {
+        .inst-img-wrap {
+            height: 500px !important;
+            position: relative ;
+            margin-bottom: 30px;
+        }
+    }
+    .insta-section .insta-photos-block .inst-img-wrap {
+        position: relative;
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,388 @@
+.hot-tours-section, .tour-page {
+    margin-bottom: 100px;
+
+    h1 {
+        color: $btn-color-blue;
+        font-family: "Montserrat-ExtraBold", sans-serif;
+        margin-bottom: 30px;
+        padding-top: 2.1em;
+        font-size: 32px;
+    }
+
+    h4 {
+        color: $txt-color-dark-gray;
+        font-family: "Montserrat-Bold", sans-serif;
+        text-transform: uppercase;
+    }
+
+    .hot-tour-rating-wrap {
+        width: 260px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        margin: 0 auto 10px auto;
+
+        .hot-tour-rating-item {
+            width: 53px;
+            margin-right: 20px;
+            height: 7px;
+        }
+
+        .count {
+            color: $txt-color-dark-gray;
+            font-size: 13px;
+        }
+
+        .del-symb {
+            color: $txt-color-dark-gray;
+            //margin: 0 10px;
+            font-size: 13px;
+        }
+    }
+
+    .l-arrow, .r-arrow {
+        cursor: pointer;
+    }
+
+    .owl-carousel .owl-stage {
+        display: flex;
+        //justify-content: space-around;
+        align-items: center;
+        height: 500px;
+    }
+
+    .hot-tours-nav-wrap {
+        width: 287px;
+        display: flex;
+        justify-content: center;
+        .l-arrow {
+            margin-left: 14px;
+            cursor: pointer;
+        }
+        .r-arrow {
+            margin-right: 14px;
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .owl-item {
+            //width: 300px !important;
+            //  transition: height .9s ease-in-out 4s, width 4s, font-size 4s 4s;
+        }
+
+        .hot-tour-info {
+            //margin-bottom: 50px;
+            padding: 20px;
+            width: 270px;
+            height: 298px;
+            border-radius: 20px;
+            background-size: cover !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transform-origin: center;
+            //transition: height .6s ease-in-out, width .4s, font-size 4s 1s;
+            transition: height .8s ease-in-out;
+            margin: 0 auto;
+
+            .hot-tour-img {
+                object-fit: cover;
+            }
+
+            .country-name {
+                font-family: "Montserrat-Bold", sans-serif;
+                font-size: 14px;
+                line-height: 12px;
+                color: $txt-color;
+                word-break: break-word;
+            }
+
+            .price-count {
+                font-family: "Montserrat-Medium", sans-serif;
+                font-size: 18px;
+                line-height: 15px;
+                color: $txt-color;
+                text-align: right;
+                flex: 1
+            }
+
+            .tour-descr {
+                font-size: 14px;
+                line-height: 15px;
+                color: $txt-color;
+                line-height: 1.2;
+                //width: 200px;
+            }
+
+            .learn-more {
+                font-size: 11px;
+                line-height: normal;
+                letter-spacing: 0.05em;
+                color: $txt-color;
+                display: flex;
+                align-items: center;
+
+                .for-line {
+                    border-top: 1px solid #F5F5F5;
+                    width: 20px;
+                    opacity: 0.5;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        //.owl-item.active {
+        //  width: 258px !important;
+        //}
+
+        .first {
+            &.owl-item {
+                width: 300px;
+            }
+            //width:332px !important;
+            outline: none !important;
+            .count {
+                font-size: 14px;
+            }
+            .hot-tour-info {
+                width: 270px;
+                height: 396px;
+
+                //.country-name {
+                //    font-size: 14px;
+                //}
+                //
+                //.price-count {
+                //    font-size: 18px;
+                //}
+                //
+                //.tour-descr {
+                //    font-size: 14px;
+                //    line-height: 20px;
+                //}
+                //
+                //.learn-more {
+                //    font-size: 14px;
+                //    margin-top: 15px;
+                //}
+                //
+                //.for-line {
+                //    width: 40px;
+                //}
+            }
+
+            //.hot-tour-rating-wrap {
+            //    width: 300px;
+            //}
+        }
+
+        .hot-tours {
+            padding-left: 9px;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .owl-carousel .owl-stage {
+            display: flex;
+            align-items: center;
+            height: auto;
+        }
+
+        .owl-item {
+            width: 280px !important;
+            margin: 0 auto !important;
+        }
+        .hot-tour-info {
+            margin-bottom: 10px;
+            padding: 20px;
+            height: 358px;
+            border-radius: 20px;
+            background-size: cover !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 280px;
+
+            .country-name {
+                font-family: "Montserrat-Bold", sans-serif;
+                font-size: 10px;
+                line-height: 12px;
+                color: $txt-color;
+                margin-bottom: 30px;
+            }
+
+            .price-count {
+                font-family: "Montserrat-Medium", sans-serif;
+                font-size: 12px;
+                line-height: 15px;
+                color: $txt-color;
+                text-align: right;
+            }
+
+            .tour-descr {
+                font-size: 10px;
+                line-height: 15px;
+                color: $txt-color;
+            }
+
+            .learn-more {
+                font-size: 9px;
+                line-height: normal;
+                letter-spacing: 0.05em;
+                color: $txt-color;
+                display: flex;
+                align-items: center;
+
+                .for-line {
+                    border-top: 1px solid #F5F5F5;
+                    width: 20px;
+                    opacity: 0.5;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .hot-tour-item {
+            &:hover {
+                text-decoration: none !important;
+            }
+            outline: none !important;
+            .count {
+                font-size: 14px;
+            }
+            .hot-tour-info {
+                //min-height: 396px;
+
+                .country-name {
+                    font-size: 14px;
+                }
+
+                .price-count {
+                    font-size: 18px;
+                }
+
+                .tour-descr {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+
+                .learn-more {
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+
+                .for-line {
+                    width: 40px;
+                }
+            }
+
+            //.hot-tour-rating-wrap {
+            //    width: 100%;
+            //}
+
+        }
+
+        .hot-tours-nav-wrap {
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 960px) {
+
+        .hot-tours-nav-wrap {
+            margin-top: 20px;
+        }
+
+        h4 {
+            text-transform: unset;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
+    .hot-tour-item {
+        @media (min-width: 992px) {
+            padding-top: 50px;
+        }
+    }
+
+    .hot-tour-item.slick-current {
+        @media (min-width: 992px) {
+            padding-top: 0;
+        }
+    }
+
+}
+
+.flex-1 {
+    flex: 1
+}
+
+#customNav-2 {
+    .owl-prev, .owl-next {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.tour-page {
+    .hot-tour-info {
+        width: 300px;
+        height: 372px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hot-tours-section{
+        margin-bottom: 40px;
+    }
+    .tour-page {
+        .hot-tour-info {
+
+            margin: 0 auto 20px auto;
+        }
+    }
+    .hot-tours-section h1 {
+        padding-top: 20px;
+    }
+
+    .popular-ways-section .popular-ways-wrap.owl-carousel .owl-stage, .popular-ways-section .popular-ways-wrap-2.owl-carousel .owl-stage
+    {
+        height: auto !important;
+        min-height: 314px;
+        margin-top: 20px;
+
+    }
+    .popular-ways-section .popular-ways-wrap {
+        margin-top: 0 !important;
+    }
+    .popular-ways-section {
+        .pop-ways-nav {
+            margin: 30px 0 0 0;
+        }
+    }
+    .blog-section {
+        margin: 40px 0 !important;
+        .blog-items-wrap {
+            margin-top: 22px !important;
+        }
+        .blog-nav-items {
+            margin-top: 15px !important;
+        }
+    }
+}

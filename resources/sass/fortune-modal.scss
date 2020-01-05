@@ -1,0 +1,220 @@
+.fortune-modal.offer-modal {
+    .modal-dialog {
+        height: auto;
+
+        .modal-body {
+            height: auto !important;
+        }
+    }
+}
+
+.flex-direction-col {
+    flex-direction: column;
+}
+
+.cup {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    background: #eeeeee;
+    border-radius: 50%;
+}
+@-webkit-keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%, 20% {
+        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%, 50%, 70%, 90% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%, 60%, 80% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+}
+
+.animated-tada {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: .4s;
+    animation-iteration-count: 3;
+}
+
+.fortune-modal {
+
+    .close{
+        z-index: 1024;
+    }
+    $yellow: #ffd300;
+    $blue: #17d3ff;
+    $pink: #ff4e91;
+
+    $duration: 1000;
+
+    @function randomNum($min, $max) {
+        $rand: random();
+        $randomNum: $min + floor($rand * (($max - $min) + 1));
+
+        @return $randomNum;
+    }
+
+
+    .confetti {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        top: -98px;
+    }
+
+    .confetti-piece {
+        position: absolute;
+        width: 8px;
+        height: 16px;
+        background: $yellow;
+        top: 0;
+        opacity: 0;
+
+        @for $i from 1 through 13 {
+            &:nth-child(#{$i}) {
+                left: $i * 7%;
+                transform: rotate(#{randomNum(-80, 80)}deg);
+                animation: makeItRain $duration * 1ms infinite ease-out;
+                animation-delay: #{randomNum(0, $duration * .5)}ms;
+                animation-duration: #{randomNum($duration * .7, $duration * 1.2)}ms
+            }
+        }
+
+        &:nth-child(odd) {
+            background: $blue;
+        }
+
+        &:nth-child(even) {
+            z-index: 1;
+        }
+
+        &:nth-child(4n) {
+            width: 5px;
+            height: 12px;
+            animation-duration: $duration * 2ms;
+        }
+
+        &:nth-child(3n) {
+            width: 3px;
+            height: 10px;
+            animation-duration: $duration * 2.5ms;
+            animation-delay: $duration * 1ms;
+        }
+
+        &:nth-child(4n-7) {
+            background: $pink;
+        }
+    }
+
+    @keyframes makeItRain {
+        from {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        to {
+            transform: translateY(200px);
+        }
+    }
+}
+
+.zaq {
+    transition: all .6s ease-in-out;
+}
+.want-tour {
+    margin: 30px auto 0 auto;
+}
+.tour-textarea {
+
+        border-radius: 10px;
+        min-height: 98px;
+        background: rgba(245, 245, 245, 0.8);
+        width: 364px;
+        margin-bottom: 30px;
+        border: none;
+        font-size: 16px;
+        padding: 19px 20px;
+
+        &:focus {
+            outline: none !important;
+        }
+
+}
+#tourModal {
+    .modal-body {
+        height: auto !important;
+        margin-bottom: 40px;
+    }
+}
+.tourModalbtn {
+    margin: 0 auto;
+}
+@media (max-width: 767px) {
+    .tourModalbtn {
+        min-width: 100px !important;
+        width: 100%;
+    }
+}

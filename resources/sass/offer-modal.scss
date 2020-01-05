@@ -1,0 +1,139 @@
+.offer-modal {
+    .modal-dialog {
+        max-width: 800px;
+        height: 600px;
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 0;
+        height: 500px !important;
+    }
+    .left-side {
+        background: url('/images/modal-back.jpg');
+        background-size: cover;
+    }
+    .right-side {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .close-button {
+        position: absolute;
+        top: 0;
+        right: 6px;
+        font-size: 33px;
+        z-index: 111111;
+    }
+    .fields-block {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .name-input-field, .number-input-field {
+            border-radius: 10px;
+            height: 55px;
+            background: rgba(245, 245, 245, 0.8);
+            width: 364px;
+            margin-bottom: 30px;
+            border: none;
+            font-size: 16px;
+            padding-left: 20px;
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+    }
+    .title-form-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+            font-family: "Montserrat-Bold", sans-serif;
+            text-align: center;
+            color: $txt-color-dark;
+        }
+
+        .line {
+            width: 150px;
+            background: #494949;
+            height: 1px;
+            opacity: 0.2;
+            margin-top: 10px;
+        }
+
+        .error {
+            border: 1px solid red;
+        }
+    }
+    label.error {
+        display: none !important;
+    }
+}
+@media (max-width: 767px) {
+    .offer-modal {
+        .modal-dialog {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .left-side {
+            display: none;
+        }
+        .right-side {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .close-button {
+            position: absolute;
+            top: 0;
+            right: 6px;
+            font-size: 33px;
+            z-index: 111111;
+        }
+        .fields-block {
+            margin-top: 10px;
+            .name-input-field, .number-input-field {
+                width: auto;
+                margin-bottom: 15px;
+                                &:focus {
+                    outline: none !important;
+                }
+            }
+
+        }
+        .title-form-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h3 {
+                font-family: "Montserrat-Bold", sans-serif;
+                text-align: center;
+                color: $txt-color-dark;
+            }
+
+            .line {
+                width: 150px;
+                background: #494949;
+                height: 1px;
+                opacity: 0.2;
+                margin-top: 10px;
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+        }
+    }
+}
+#third-modal {
+    h3 {
+        font-size: 20px !important;
+    }
+}

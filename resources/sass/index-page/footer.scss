@@ -1,0 +1,109 @@
+footer {
+    height: 163px;
+    margin-top: -163px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background: #2196F3;
+    &.footer-transparent {
+        background: transparent;
+        .social-icons-block {
+            a {
+                padding: 10px;
+
+                img {
+                    width: 30px;
+                    filter: none;
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
+    .footer-logo-wrap {
+        display: flex;
+        align-items: center;
+        .footer-link {
+            margin-right: 66px;
+
+            img {
+                width: 150px;
+            }
+
+        }
+
+        .social-icons-block {
+            a {
+                padding: 10px;
+
+                img {
+                    width:30px;
+                    filter: brightness(195%);
+                    opacity: .7;
+                }
+
+            }
+
+            .ok-soc-img {
+                width: auto;
+            }
+        }
+    }
+
+    .footer-info-block {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        align-items: center;
+
+        .phone-icon-wrap {
+            margin-right: 14px;
+
+            img {
+                width:12px;
+            }
+        }
+
+        a {
+            font-size: 18px;
+            color: $txt-color-gray;
+            font-family: "Montserrat-Bold", sans-serif;
+            text-decoration: none;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+        .footer-info-block {
+            display: none;
+        }
+
+        .footer-logo-wrap {
+            flex-direction: column;
+            align-items: center;
+
+            .footer-link {
+                margin-right: 0;
+            }
+
+            .social-icons-block {
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+
+                a {
+                    margin-right: 0;
+                }
+
+            }
+        }
+
+        .footer-wrap {
+            justify-content: center;
+        }
+
+    }
+
+}
+

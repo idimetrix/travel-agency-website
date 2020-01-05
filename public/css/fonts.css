@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Montserrat-Medium";
+    src: url("/fonts/Montserrat-Medium.woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("/fonts/Montserrat-ExtraBold.woff");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("/fonts/Montserrat-Bold.woff");
+    font-display: swap;
+}
+

@@ -1,0 +1,246 @@
+.country-example-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+  background: url('/images/italybg.jpg') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  h3 {
+    color: $txt-color-dark-gray;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+  }
+
+  .line-mob {
+    width: 70px;
+    height: 1px;
+    background: rgb(229, 229, 229);
+  }
+
+  .blog-title-wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      padding-top: 0;
+    }
+  }
+
+}
+
+.single-country-wrap {
+
+  .about-country-wrap {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 20px;
+    padding: 50px;
+    .country-name {
+      font-family: "Montserrat-Bold", sans-serif;
+      color: $txt-color-dark-gray;
+      margin: -35px 0 50px;
+      @media (max-width: 767px) {
+        margin-top: 25px;
+      }
+    }
+
+    .text-wrap {
+      p {
+        font-size: 18px;
+        color: $txt-color-dark-gray;
+        margin-bottom: 0;
+      }
+    }
+
+    .for-slider-wrap {
+      margin-right: -70px;
+
+      .slick-slide {
+        margin: 0 10px;
+      }
+      .slick-list {
+        margin: 0 -10px;
+      }
+
+      .slider-item {
+        position: relative;
+        height: 170px;
+        border-radius: 20px;
+
+        .slider-item-photo {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 20px;
+        }
+
+
+
+        a {
+          display: flex;
+          position: relative;
+          z-index: 2;
+          outline: none !important;
+          border-radius:20px;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+
+          .loupe-icon {
+            position: absolute;
+            display: none;
+            z-index: 3;
+          }
+        }
+
+
+        &:hover {
+          a {
+            .loupe-icon {
+              display: flex;
+            }
+
+            &:after {
+              content: " ";
+              position: absolute;
+              background: red;
+              width:100%;
+              height: 100%;
+              background: linear-gradient(0deg, rgba(38, 40, 50, 0.8), rgba(38, 40, 50, 0.8));
+              border-radius: 20px;
+            }
+
+          }
+        }
+      }
+
+      @media (max-width: 767px) {
+       margin-right: 0;
+      }
+
+    }
+
+    .country-example-nav {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      .r-arrow-country {
+        margin-right: 14px;
+        cursor: pointer;
+      }
+
+      .l-arrow-country {
+        margin-left: 14px;
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: 767px) {
+      margin-top: -55%;
+      padding: 25px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      margin-top: -25%;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: -13%;
+    }
+
+  }
+
+  .single-country-nav {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #C4C4C4;
+      font-size: 18px;
+      font-family: "Montserrat-Bold", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: "Montserrat-Bold", sans-serif;
+      color: $txt-color-dark-gray;
+    }
+
+    .front-line {
+      margin: 0 50px;
+      width: 1px;
+      height: 30px;
+      background: rgba(73, 73, 73, 0.5);
+
+      @media (max-width: 767px) {
+        margin: 0 10px;
+      }
+
+    }
+
+    @media (max-width: 767px) {
+      justify-content: space-around;
+    }
+
+
+  }
+
+  .for-search-module {
+    background: #fff;
+    margin-top: 100px;
+    padding: 10px 48px 30px 48px;
+    border-radius: 20px;
+  }
+
+}
+
+
+
+//@media (min-width: 1200px) {
+//  .country-example-section {
+//    h2 {
+//      padding-left: 104px;
+//    }
+//  }
+//}
+
+@media (max-width: 1200px) {
+  .country-example-section {
+    padding-top: 190px;
+    height: 650px;
+    background-size: cover;
+    .right-side-txt-block {
+      display: none;
+    }
+    p {
+      margin-top: 23px;
+    }
+
+    .line-mob {
+      display: none;
+    }
+
+  }
+}
+
+
+@media (max-width: 767px) {
+  .country-example-section {
+    height: 350px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .example-post-section {
+    height: 550px;
+  }
+
+}

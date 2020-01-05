@@ -1,0 +1,231 @@
+.example-post-section {
+  padding: 12% 0 19% 0;
+  margin-top: -141px;
+  background: url('/images/postexample.jpg') no-repeat;
+  background-size: 100%;
+
+  h2 {
+    font-family: "Montserrat-ExtraBold", sans-serif;
+    color: $txt-color;
+    margin: 0;
+  }
+
+  h3 {
+    color: $txt-color-dark-gray;
+    font-family: "Montserrat-ExtraBold", sans-serif;
+  }
+
+  .line-mob {
+    width: 70px;
+    height: 0.8px;
+    background: rgb(229, 229, 229);
+    position: absolute;
+  }
+
+  .blog-title-wrap {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      @media (max-width: 767px) {
+      margin-bottom: 0.5rem;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding-top: 100px;
+      display: flex;
+      align-items: center;
+    }
+
+
+  }
+}
+
+
+.single-post-wrap {
+  padding-bottom: 263px;
+  .post-example-section {
+    border-radius: 20px;
+    background: #fff;
+
+    .post-top-nav {
+      border-bottom: 1px solid rgba(49,49,49, 0.1);
+      margin: 0 50px;
+      align-items: center;
+      justify-content: space-between;
+      height: 109px;
+      display: flex;
+      .likes-wrap {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+        .like-count {
+          font-size: 18px;
+          color:#C4C4C4;
+        }
+      }
+
+    }
+
+    .post-top-nav.bottom {
+      border-bottom:none;
+      border-top: 1px solid rgba(49,49,49, 0.1);
+    }
+
+    .post-text {
+      padding: 50px;
+      h4 {
+        margin: 9px 0 50px;
+        font-family: "Montserrat-Bold", sans-serif;
+        color:$txt-color-dark-gray;
+      }
+
+      .post-descr {
+        font-size: 18px;
+        color:$txt-color-dark-gray;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .read-also-block {
+    margin-top: 100px;
+    .wrap-block {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+
+      .line {
+        height: 1px;
+        width: 70px;
+        background: $txt-color-dark-gray;
+      }
+
+      h3 {
+        margin: 0;
+        padding-left: 30px;
+      }
+    }
+
+
+    .blog-item-wrap {
+      &:nth-child(2) {
+        .background-blog-full {
+          display: none;
+        }
+      }
+
+
+      .blog-item {
+        position: relative;
+        cursor: pointer;
+        height: 396px;
+        max-width: 370px;
+        object-fit: cover;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15px 20px;
+        background-size: cover !important;
+        margin: 25px 0;
+
+        .blog-item-title {
+          font-family: "Montserrat-Bold", sans-serif;
+          color: $txt-color;
+          margin-bottom: 30px;
+        }
+
+        .blog-item-descr {
+          color: $txt-color;
+          line-height: 20px;
+          margin-bottom: 0;
+        }
+
+        .arrow-blog {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+
+        .background-blog-full {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          border-radius: 20px;
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin-top: 45px !important;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: -25%;
+  }
+
+  @media (min-width: 992px) {
+    margin-top: -13%;
+  }
+}
+
+@media (max-width: 767px) {
+  .single-post-wrap {
+    .post-example-section {
+      .post-text {
+        padding: 15px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .example-post-section {
+    h2 {
+      padding-left: 104px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .example-post-section {
+    padding-top: 190px;
+    height: 650px;
+    background-size: cover;
+    p {
+      margin-top: 23px;
+    }
+
+    .line-mob {
+      display: none;
+    }
+
+  }
+}
+
+
+@media (max-width: 767px) {
+  .example-post-section {
+    height: 250px;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px)  {
+  .example-post-section {
+    height: 550px;
+  }
+}
+
+
+.blog-item-title {
+    font-size: 22px !important;
+}

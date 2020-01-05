@@ -1,0 +1,201 @@
+@import "./customizedScroll.scss";
+
+body {
+  h2, h3, h4, h5, h6 {
+    letter-spacing: 0
+  }
+
+  $mainCardColor: #EBF3F6;
+
+  .height-table-options {
+    min-height: 700px;
+  }
+
+  .v-pagination {
+    margin: 10px;
+  }
+
+  .main-component-controller {
+    margin-top: 64px;
+    height: calc(100% - 64px);
+    width: 100%;
+    padding: 20px 0;
+    background: $mainCardColor !important;
+  }
+
+  .container-without-side {
+    margin-left: 0;
+  }
+
+  .container-with-side {
+    margin-left: 300px;
+  }
+
+  .cart-title-modify {
+    width: auto;
+    height: 94px;
+    background: white;
+    margin: 0 20px;
+
+    h3 {
+      color: #1e88e5 !important;
+    }
+  }
+
+  .card-container {
+    margin: 10px 20px;
+    width: auto;
+    height: auto;
+    background: white;
+  }
+
+  .add-button {
+    margin: 10px 20px 5px;
+    color: white !important;
+  }
+
+  .table-custom {
+    padding: .5rem 1.5rem;
+  }
+
+  .white-color-text {
+    color: white;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  .tour-modal {
+    .v-textarea textarea {
+      min-height: 220px;
+    }
+  }
+
+  .modal-general-background {
+    background: $mainCardColor !important;
+  }
+
+  .remove-minus-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .aside-active, .aside-list:hover {
+    background: #80cbc4 !important;
+  }
+
+  .image-container-for-table {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .td-max-body {
+    max-width: 600px !important;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px 10px;
+    align-items: flex-start;
+
+    .img-container {
+      width: 200px;
+      height: 200px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+    }
+
+    .img-container, .avatar {
+      margin: 10px 5px;
+      position: relative;
+
+      &:hover .remove-minus-icon {
+        display: block;
+        position: absolute;
+        top: -23px;
+        right: -19px;
+        margin: 0 !important;
+      }
+
+      img {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .absolute-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .avatar-field {
+    position: relative;
+
+    .remove-minus-icon {
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      display: none;
+    }
+
+    &:hover .remove-minus-icon {
+      display: block;
+      cursor: pointer;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .limiter-p-reworker {
+    margin: 0;
+    word-break: break-all;
+  }
+
+  .category-container {
+    width: auto;
+    color: white;
+    background-color: #ffb22b;
+    border-radius: 4px;
+  }
+
+  .category-limiter-width {
+    width: 600px;
+  }
+}
+
+.v-input--selection-controls.v-input .v-label {
+  margin-top: 10px;
+}
+
+.v-dialog--fullscreen {
+  overflow-x: hidden;
+}
+
+.ql-tooltip .ql-editing {
+  top: -8.422px !important;
+  left: -1px !important;
+}
